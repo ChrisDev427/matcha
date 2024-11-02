@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            background-image: linear-gradient(to right, #ff24a72d, #8890fe2e);
+
+            /* background-color: #ffffff;
+            color: #ffffff;
+            line-height: 1.6;  */
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 5px;
+            background-image: linear-gradient(to right, #ff24a7ce, #8890fedb);
+            box-shadow: 0 0 28px rgba(0, 0, 0, 0.34);
+        }
+        h1 {
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+            text-shadow: 0 0 18px rgba(255, 255, 255, 0.438);
+            margin: 0;
+        }
+        h4 {
+            color: white;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        p {
+            color: white;
+            font-size: 0.8rem;
+            text-align: center;
+            font-style: italic;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            width: 60%;
+            margin: auto;
+            padding: 10px;
+            background-color: #a602e7;
+            color: #fff;
+            font-weight: 900;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.411);
+            transition: all 0.3s;
+        }
+        .button:hover {
+            background-color: #a602e783;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Matcha</h1>
+        <h4>Thank you for signing up.<br>Please click the link below to verify your email address and activate your account:</h4>
+        <a href="{{ url }}?token={{ token }}" target="_self" class="button">Verify your e-mail</a>
+        <p>If you have not created an account, please ignore this email.</p>
+    </div>
+</body>
+</html>
